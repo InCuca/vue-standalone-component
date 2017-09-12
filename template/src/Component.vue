@@ -1,5 +1,5 @@
 <template lang="html">
-  <strong>{{ text }}</strong>
+  <strong>\{{ text }}</strong>
 </template>
 
 <script>
