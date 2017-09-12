@@ -20,13 +20,17 @@ module.exports = {
     }
   },
   "complete": function(data, {logger}) {
-    logger.log("To get started:\n\n{{^inPlace}}cd {{destDirName}}\n\n \
-    {{/inPlace}}1. Install dependencies npm install\n2. Write your component \
-    in src/Component.vue\n3. Write a demo in docs docs/Usage.md\n4. Access \
-    demo and docs with npm run serve\n5. Build with npm run build\n6. Build \
-    docs with npm run build:doc");
-    const name = require(data.destDirName + '/package.json').name;
-    console.log(this, data, name);
+    logger.log("To get started:");
+    if (data.inPlace) logger.log("\n\ncd " + data.destDirName);
+    logger.log("1. Install dependencies npm install");
+    logger.log("2. Write your component in src/Component.vue");
+    logger.log("3. Write a demo in docs docs/Usage.md");
+    logger.log("4. Access demo and docs with npm run serve");
+    logger.log("5. Build with npm run build");
+    logger.log("6. Build docs with npm run build:doc");
+    const name = require('./package.json').name;
+
+    // Rename to be compatible with styleguide configuration
     fs.renameSync('src/Component.vue', 'src/' + name + '.vue');
   }
 };
