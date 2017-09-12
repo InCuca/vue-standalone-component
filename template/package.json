@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "{{ description }}",
   "author": "{{ author }}",
-  "main": "src/{{ name }}.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src",
