@@ -1,0 +1,30 @@
+{
+  "name": "{{ name }}",
+  "version": "0.0.1",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "main": "build/{{ name }}.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
+    "build:doc": "vue-styleguidist build",
+    "serve": "vue-styleguidist server"
+  },
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "vue": "^2.4.1"
+  },
+  "devDependencies": {
+    "vue-cli": "^2.8.2",
+    "vue-styleguidist": "^1.2.5",
+    "eslint": "^3.17.1",
+    "eslint-plugin-vue": "beta",
+  }
+}
