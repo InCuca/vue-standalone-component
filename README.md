@@ -22,6 +22,7 @@ The generated output in ./dist can be used with node and the browser.
 
 - Gulp tasks for development building, testing and development server
 - Karma for testing
+- TODO: Demo page from vue-styleguidist
 
 ### Testing
 
