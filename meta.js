@@ -29,10 +29,7 @@ module.exports = {
     msg.concat("\n5. Build with npm run build");
     msg.concat("\n6. Build docs with npm run build:doc");
     logger.log(msg);
-    console.log(data, this);
-    const name = require('./package.json').name;
-
     // Rename to be compatible with styleguide configuration
-    fs.renameSync('src/Component.vue', 'src/' + name + '.vue');
+    fs.renameSync('src/Component.vue', 'src/' + data.name + '.vue');
   }
 };
