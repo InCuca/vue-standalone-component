@@ -26,5 +26,6 @@
     "vue-styleguidist": "^1.2.5",
     "eslint": "^3.17.1",
     "eslint-plugin-vue": "beta",
+    "webpack": "^3.5.6"
   }
 }
