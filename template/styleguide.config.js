@@ -1,17 +1,26 @@
-const {name, version} = require('./package.json')
 const loaders = require('vue-webpack-loaders');
 
 module.exports = {
-  components: 'src/**/[A-Z]*.vue',
+  sections: [
+    {
+      /* The component itself */
+      name: '{{ name }}',
+      content: 'docs/Introduction.md',
+      components: 'src/Component/Component.vue',
+      ignore: ['src/Component/Component.vue'],
+      sections: [
+        /* One item for every different demo or doc of the component */
+        {
+          name: 'usage',
+          content: 'docs/Usage.md'
+        }
+      ]
+    },
+  ],
   webpackConfig: {
     module: {
 			loaders,
-		},
-    plugins: [
-      new webpack.DefinePlugin({
-        'proccess.env.VERSION': JSON.stringify(version) // adds MyComponent.version
-      })
-    ]
+		}
   },
   serverPort: 6062
 };
