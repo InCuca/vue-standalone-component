@@ -17,5 +17,5 @@
       "label": "Author"
     }
   },
-  "completeMessage": "To get started:\n\n{{^inPlace}}cd {{destDirName}}\n\n{{/inPlace}}1. Write your component in src/Component.vue\n2. Write a demo in src/demo.vue\n3. npm run dev\n4. npm run dist\n5. npm run dist:demo\n6. npm run demo:open"
+  "completeMessage": "To get started:\n\n{{^inPlace}}cd {{destDirName}}\n\n{{/inPlace}}1. Write your component in src/Component.vue\n2. Write a demo in README.md\n3. Access demo and docs with npm run serve\n4. Build with npm run build\n5. Build docs with npm run build:doc"
 }
