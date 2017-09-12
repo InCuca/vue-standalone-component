@@ -1,0 +1,21 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Component name in kebab-case format",
+      "default": "v-awesome-component"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Vue.js component"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    }
+  },
+  "completeMessage": "To get started:\n\n{{^inPlace}}cd {{destDirName}}\n\n{{/inPlace}}1. Write your component in src/Component.vue\n2. Write a demo in src/demo.vue\n3. npm run dev\n4. npm run dist\n5. npm run dist:demo\n6. npm run demo:open"
+}
