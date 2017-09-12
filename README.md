@@ -15,9 +15,11 @@ $ vue init InCuca/vue-standalone-component my-component
 $ cd my-component
 $ npm install
 $ npm run serve
+$ npm run build
+$ npm run build:doc
 ```
 
-The generated output in ./build can be used with node and the browser.
+The generated output in ./dist can be used with node and the browser.
 
 ### What's Included
 
