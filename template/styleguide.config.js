@@ -6,8 +6,8 @@ module.exports = {
       /* The component itself */
       name: '{{ name }}',
       content: 'docs/Introduction.md',
-      components: 'src/Component/Component.vue',
-      ignore: ['src/Component/Component.vue'],
+      components: 'src/{{ name }}.vue',
+      ignore: ['src/{{ name }}.vue'],
       sections: [
         /* One item for every different demo or doc of the component */
         {
