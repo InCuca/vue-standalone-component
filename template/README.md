@@ -16,6 +16,10 @@
 
 `npm i --save {{ name }}`
 
+## Demo and Docs
+
+`npm run serve`
+
 ## License
 
 This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)
