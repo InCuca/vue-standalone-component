@@ -1,4 +1,4 @@
-import Component from './Component/Component.vue';
+import Component from './{{name}}/{{name}}.vue';
 
 Component.install = Vue => Vue.component(Component.name, Component);
 Component.version = process.env.VERSION;
