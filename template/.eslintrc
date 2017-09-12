@@ -1,0 +1,14 @@
+{
+  "extends": ["plugin:vue/recommended"],
+  "plugins": ["vue"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "globals": {
+    "expect": true,
+    "assert": true,
+    "require": true,
+    "request": true
+  }
+}
