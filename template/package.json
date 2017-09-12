@@ -6,7 +6,7 @@
   "main": "src/{{ name }}.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src",
     "build": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
     "build:doc": "vue-styleguidist build",
     "serve": "vue-styleguidist server"
