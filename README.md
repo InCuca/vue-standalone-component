@@ -13,6 +13,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 $ npm install -g vue-cli
 $ vue init InCuca/vue-standalone-component my-component
 $ cd my-component
+$ npm install
 $ npm run serve
 ```
 
