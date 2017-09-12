@@ -30,7 +30,8 @@ module.exports = {
     msg.concat("\n6. Build docs with npm run build:doc");
     logger.log(msg);
     // Rename to be compatible with styleguide configuration
-    fs.renameSync('src/Component.vue', 'src/' + data.name + '.vue');
-    fs.renameSync('src/Component.md', 'src/' + data.name + '.md');
+    fs.renameSync('src/Component/Component.vue', 'src/' + data.name + '.vue');
+    fs.renameSync('src/Component/Component.md', 'src/' + data.name + '.md');
+    fs.renameSync('src/Component', 'src/' + data.name);
   }
 };

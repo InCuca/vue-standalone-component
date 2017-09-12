@@ -1,4 +1,3 @@
-You can put more examples!
-    <{{ name }} text="Hello World!" @click="alert('clicked!')"></{{ name }}>
+Just a example contained in a single doc file
 
-* Remember to update styleguide.config.js also
+    <{{ name }} text="Hello World!" @click="alert('clicked!')"></{{ name }}>
