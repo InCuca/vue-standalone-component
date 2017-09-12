@@ -4,7 +4,7 @@
 
 <script>
 /**
- * {{description}}
+ * Component documentation
  */
 export default {
   name: '{{ name }}',

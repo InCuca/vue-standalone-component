@@ -11,8 +11,13 @@ module.exports = {
       sections: [
         /* One item for every different demo or doc of the component */
         {
-          name: 'usage',
-          content: 'docs/Usage.md'
+          name: 'Use Case 1',
+          content: 'docs/UseCase1.md'
+        },
+        /* One item for every different demo or doc of the component */
+        {
+          name: 'Use Case 2',
+          content: 'docs/UseCase2.md'
         }
       ]
     },
