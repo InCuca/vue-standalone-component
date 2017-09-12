@@ -1,3 +1,3 @@
 Just a example contained in a single doc file
 
-    <{{ name }} text="Hello World!" @click="alert('clicked!')"></{{ name }}>
+    <{{ name }} text="Hello World!" style="color: red;"></{{ name }}>
