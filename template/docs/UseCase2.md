@@ -1,5 +1,5 @@
 You can add more examples!
 
-    <{{ name }} text="Hello World!" @click="alert('clicked in two!')"></{{ name }}>
+    <{{ name }} text="Hello World!" style="background-color: pink;"></{{ name }}>
 
 * Remember to update styleguide.config.js also
