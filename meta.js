@@ -22,7 +22,7 @@ module.exports = {
   },
   "complete": function(data, {logger}) {
     // Rename to be compatible with styleguide configuration
-    const cmpDir = path.resolve(data.destDirName, 'src/Component');
+    const cmpDir = data.inPlace?'src/Component':path.resolve(data.destDirName, 'src/Component');
     fs.renameSync(
       path.resolve(cmpDir, 'Component.vue'),
       path.resolve(cmpDir, data.name + '.vue')
@@ -38,11 +38,11 @@ module.exports = {
 
     logger.log("To get started:");
     if (!data.inPlace) logger.log("cd " + data.destDirName);
-    logger.log("1. Install dependencies npm install");
+    logger.log("1. Install dependencies: npm install");
     logger.log("2. Write your component in src/Component.vue");
     logger.log("3. Write a demo in docs docs/Usage.md");
     logger.log("4. Access demo and docs with npm run serve");
-    logger.log("5. Build with npm run build");
-    logger.log("6. Build docs with npm run build:doc");
+    logger.log("5. Build with: npm run build");
+    logger.log("6. Build docs with: npm run build:doc");
   }
 };
