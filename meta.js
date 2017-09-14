@@ -32,7 +32,8 @@ module.exports = {
       path.resolve(cmpDir, data.name + '.md')
     );
     fs.renameSync(
-      path.resolve(cmpDir, 'src/' + data.name)
+      cmpDir,
+      path.resolve(cmpDir, '../', data.name)
     );
 
     logger.log("To get started:");
