@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 module.exports = {
   "prompts": {
@@ -21,9 +22,18 @@ module.exports = {
   },
   "complete": function(data, {logger}) {
     // Rename to be compatible with styleguide configuration
-    fs.renameSync('src/Component/Component.vue', 'src/Component/' + data.name + '.vue');
-    fs.renameSync('src/Component/Component.md', 'src/Component/' + data.name + '.md');
-    fs.renameSync('src/Component', 'src/' + data.name);
+    const cmpDir = path.resolve(data.destDirName, 'src/Component');
+    fs.renameSync(
+      path.resolve(cmpDir, 'Component.vue'),
+      path.resolve(cmpDir, data.name + '.vue')
+    );
+    fs.renameSync(
+      path.resolve(cmpDir, 'Component.md'),
+      path.resolve(cmpDir, data.name + '.md')
+    );
+    fs.renameSync(
+      path.resolve(cmpDir, 'src/' + data.name)
+    );
 
     logger.log("To get started:");
     if (data.inPlace) logger.log("cd " + data.destDirName);
