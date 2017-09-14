@@ -20,18 +20,18 @@ module.exports = {
     }
   },
   "complete": function(data, {logger}) {
-    let msg = "To get started:";
-    if (data.inPlace) msg.concat("\n\ncd " + data.destDirName);
-    msg.concat("\n\n1. Install dependencies npm install");
-    msg.concat("\n2. Write your component in src/Component.vue");
-    msg.concat("\n3. Write a demo in docs docs/Usage.md");
-    msg.concat("\n4. Access demo and docs with npm run serve");
-    msg.concat("\n5. Build with npm run build");
-    msg.concat("\n6. Build docs with npm run build:doc");
-    logger.log(msg);
     // Rename to be compatible with styleguide configuration
     fs.renameSync('src/Component/Component.vue', 'src/Component/' + data.name + '.vue');
     fs.renameSync('src/Component/Component.md', 'src/Component/' + data.name + '.md');
     fs.renameSync('src/Component', 'src/' + data.name);
+
+    logger.log("To get started:");
+    if (data.inPlace) logger.log("cd " + data.destDirName);
+    logger.log("1. Install dependencies npm install");
+    logger.log("2. Write your component in src/Component.vue");
+    logger.log("3. Write a demo in docs docs/Usage.md");
+    logger.log("4. Access demo and docs with npm run serve");
+    logger.log("5. Build with npm run build");
+    logger.log("6. Build docs with npm run build:doc");
   }
 };
