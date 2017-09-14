@@ -37,7 +37,7 @@ module.exports = {
     );
 
     logger.log("To get started:");
-    if (data.inPlace) logger.log("cd " + data.destDirName);
+    if (!data.inPlace) logger.log("cd " + data.destDirName);
     logger.log("1. Install dependencies npm install");
     logger.log("2. Write your component in src/Component.vue");
     logger.log("3. Write a demo in docs docs/Usage.md");
