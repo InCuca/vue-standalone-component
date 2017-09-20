@@ -38,11 +38,31 @@ module.exports = {
 
     logger.log("To get started:");
     if (!data.inPlace) logger.log("cd " + data.destDirName);
+
+    const logFiles = {
+      component: path.relative(
+        data.destDirName,
+        path.resolve(data.destDirName, 'src', data.name, data.name + '.vue')
+      ),
+      componentDoc: path.relative(
+        data.destDirName,
+        path.resolve(data.destDirName, 'src', data.name, data.name + '.md')
+      ),
+      usage: path.relative(
+        data.destDirName,
+        path.resolve(data.destDirName, 'docs/*.md')
+      )
+    }
     logger.log("1. Install dependencies: npm install");
-    logger.log("2. Write your component in src/Component.vue");
-    logger.log("3. Write a demo in docs docs/Usage.md");
-    logger.log("4. Access demo and docs with npm run serve");
-    logger.log("5. Build with: npm run build");
-    logger.log("6. Build docs with: npm run build:doc");
+    logger.log("2. Write your component in " + logFiles.component);
+    logger.log(
+      "3. Write the component doc in " +
+      logFiles.componentDoc +
+      ' or in the component itself using jsdoc'
+    );
+    logger.log("4. Write the demo and usage instructions in " + logFiles.usage);
+    logger.log("5. Access demo and docs with npm run serve");
+    logger.log("6. Build with: npm run build");
+    logger.log("7. Build docs with: npm run build:doc");
   }
 };
