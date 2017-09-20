@@ -1,5 +1,8 @@
 const loaders = require('vue-webpack-loaders');
-
+/**
+ * More info about this styleguide configuration in
+ * vue-styleguidist/vue-styleguidist github repository
+ */
 module.exports = {
   sections: [
     {
