@@ -12,12 +12,12 @@ module.exports = {
       components: 'src/**/{{ name }}.vue',
       // ignore: ['src/ignored-component/ignored-component.vue'],
       sections: [
-        /* One item for every different demo or doc of the component */
+        /* One item for each demo or example of the component */
         {
           name: 'Use Case 1',
           content: 'docs/UseCase1.md'
         },
-        /* One item for every different demo or doc of the component */
+        /* One item for each demo or example of the component */
         {
           name: 'Use Case 2',
           content: 'docs/UseCase2.md'
