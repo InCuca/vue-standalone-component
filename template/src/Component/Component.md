@@ -1,3 +1,3 @@
-Put here the {{ name }} component usage instructions
+Put here the {{ name }} isolated usage instructions
 
     <{{ name }} text="Hello World!"></{{ name }}>
