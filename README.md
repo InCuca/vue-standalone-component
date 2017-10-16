@@ -21,6 +21,8 @@ $ npm run build:doc
 
 The generated output in ./dist can be used with node and the browser.
 
+PS: to build to UMD run `npm run build:umd`
+
 ### What's Included
 
 - TODO: Karma for testing
