@@ -9,7 +9,7 @@ module.exports = {
       /* The component itself */
       name: '{{ name }}',
       content: 'docs/Introduction.md',
-      components: 'src/**/{{ name }}.vue',
+      components: 'src/**/*.vue',
       // ignore: ['src/ignored-component/ignored-component.vue'],
       sections: [
         /* One item for each demo or example of the component */

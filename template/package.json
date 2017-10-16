@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "description": "{{ description }}",
   "author": "{{ author }}",
-  "main": "dist/index.js",
+  "main": "dist/{{name}}.min.js",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src",
-    "build": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
+    "build": "poi build --format cjs",
+    "build:umd": "poi build --format umd",
     "build:doc": "vue-styleguidist build",
     "serve": "vue-styleguidist server"
   },
@@ -25,7 +26,8 @@
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^3.17.1",
     "eslint-plugin-vue": "beta",
-    "vue-cli": "^2.8.2",
+    "node-glob": "^1.2.0",
+    "poi": "^9.3.10",
     "vue-styleguidist": "^1.2.5",
     "vue-webpack-loaders": "^1.0.6",
     "webpack": "^3.1.0"

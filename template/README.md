@@ -4,7 +4,16 @@
 
 # Usage
 
+```js
+import Component from '{{name}}'
+
+Vue.component('{{name}}', Component);
+```
+
     <{{name}} text="Hello World!"></{{name}}>
+
+PS: You can also build to UMD with `npm run build:umd`, the component will be
+available in the window['{{name}}'] variable.
 
 ## Installation
 
