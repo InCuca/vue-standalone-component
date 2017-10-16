@@ -1,4 +1,17 @@
 const loaders = require('vue-webpack-loaders');
+const glob = require('glob').sync;
+const basename = require('path').basename;
+
+function getDocSections() {
+  b = p => basename(p, '.md');
+  return glob('docs/*.md')
+  .filter(path => b(path)!=='Introduction')
+  .map(path => ({
+    name: b(path),
+    content: path
+  }));
+}
+
 /**
  * More info about this styleguide configuration in
  * vue-styleguidist/vue-styleguidist github repository
@@ -7,22 +20,11 @@ module.exports = {
   sections: [
     {
       /* The component itself */
-      name: '{{ name }}',
+      name: 'test-cmp1',
       content: 'docs/Introduction.md',
       components: 'src/**/*.vue',
       // ignore: ['src/ignored-component/ignored-component.vue'],
-      sections: [
-        /* One item for each demo or example of the component */
-        {
-          name: 'Use Case 1',
-          content: 'docs/UseCase1.md'
-        },
-        /* One item for each demo or example of the component */
-        {
-          name: 'Use Case 2',
-          content: 'docs/UseCase2.md'
-        }
-      ]
+      sections: getDocSections()
     },
   ],
   webpackConfig: {
