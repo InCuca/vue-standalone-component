@@ -6,7 +6,7 @@
   "main": "dist/{{name}}.min.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint src/**/*.vue",
     "build": "poi build --format cjs",
     "build:umd": "poi build --format umd",
     "build:doc": "vue-styleguidist build",
