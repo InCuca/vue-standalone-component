@@ -13,7 +13,7 @@ Vuejs standalone component template using karma for testing
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
-``` bash
+```bash
 $ npm install -g vue-cli
 $ vue init InCuca/vue-standalone-component my-component
 $ cd my-component
@@ -32,13 +32,13 @@ PS: to build to UMD run `npm run build:umd`
 
 ### Linting
 
-``` bash
+```bash
 $ npm run lint
 ```
 
 ### Testing & Test Coverage
 
-``` bash
+```bash
 $ npm run test
 $ npm run test:watch
 $ npm run test:cov
@@ -46,7 +46,7 @@ $ npm run test:cov
 
 ### Building to ./dist
 
-``` bash
+```bash
 $ npm run build
 $ npm run build:doc
 ```
