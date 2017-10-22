@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Vuejs standalone component template using karma for testing",
   "main": "meta.js",
+  "engines": {
+    "node": ">=6.0"
+  },
   "scripts": {
     "test": "node test.js"
   },
