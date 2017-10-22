@@ -19,8 +19,6 @@ $ vue init InCuca/vue-standalone-component my-component
 $ cd my-component
 $ npm install
 $ npm run serve
-$ npm run build
-$ npm run build:doc
 ```
 
 The generated output in ./dist can be used with node and the browser.
@@ -30,7 +28,7 @@ PS: to build to UMD run `npm run build:umd`
 ### What's Included
 
 - Karma for testing
-- Demo and documentation page from vue-styleguidist
+- Demo and documentation page from [vue-styleguidist](https://github.com/vue-styleguidist/vue-styleguidist/)
 
 ### Linting
 
@@ -38,8 +36,17 @@ PS: to build to UMD run `npm run build:umd`
 $ npm run lint
 ```
 
+### Testing & Test Coverage
+
+``` bash
+$ npm run test
+$ npm run test:watch
+$ npm run test:cov
+```
+
 ### Building to ./dist
 
 ``` bash
 $ npm run build
+$ npm run build:doc
 ```
