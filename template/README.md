@@ -31,7 +31,7 @@ available in the window['{{name}}'] variable.
 
 ## Tests
 
-This template uses karma by default, you can change test settings in poi.config.js
+This template uses karma with chai by default, you can change test settings in poi.config.js
 
 `npm run test`
 `npm run test:watch`
