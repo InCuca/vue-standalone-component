@@ -10,7 +10,10 @@
     "build": "poi build --format cjs",
     "build:umd": "poi build --format umd",
     "build:doc": "vue-styleguidist build",
-    "serve": "vue-styleguidist server"
+    "serve": "vue-styleguidist server",
+    "test": "poi test",
+    "test:watch": "poi test --watch",
+    "test:cov": "poi test --coverage",
   },
   "keywords": [
     "vue",
@@ -28,6 +31,7 @@
     "eslint-plugin-vue": "beta",
     "node-glob": "^1.2.0",
     "poi": "^9.3.10",
+    "poi-preset-karma": "^9.1.0",
     "vue-styleguidist": "^1.2.5",
     "vue-webpack-loaders": "^1.0.6",
     "webpack": "^3.1.0"

@@ -14,7 +14,6 @@ module.exports = {
       files: ['test/specs/**/*.spec.js'],
       browsers: ['PhantomJS'],
       frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
-      coverage: true
     })
   ]
 };
