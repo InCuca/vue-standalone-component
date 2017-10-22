@@ -11,7 +11,7 @@ const commands = [
   {cmd: 'npm', args: ['run', 'test:cov'], cwd: 'test-cmp'}
 ];
 
-function executeCommand(command) {
+function executeCommand(command, index) {
   return new Promise((resolve, reject) => {
     let cp = spawn(command.cmd, command.args, {cwd: command.cwd});
     process.on('exit', cp.kill);
@@ -44,16 +44,23 @@ function executeCommand(command) {
         reject(code);
         rejected = true;
       } else {
-        console.log('process exit with status', code);
+        console.log(
+          '=> process',
+          (index+1),
+          'of',
+          commands.length,
+          'exit with status',
+          code
+        );
         resolve(code);
       }
     });
   });
 }
 
-commands.reduce((prev, next) => {
+commands.reduce((prev, next, index) => {
   return prev.then(() => {
-    return executeCommand(next)
+    return executeCommand(next, index)
       .catch(code => {
         console.log('child process exit with', code);
         if (!next.ignoreErrors) process.exit(code);
