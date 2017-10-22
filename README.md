@@ -1,4 +1,6 @@
 # vue-standalone-component
+[![Travis](https://img.shields.io/travis/InCuca/vue-standalone-component/master.svg)](https://travis-ci.org/InCuca/vue-standalone-component/branches)
+
 Vuejs standalone component template using karma for testing
 
 > Build your standalone components using this tiny template.
