@@ -7,6 +7,8 @@ Vuejs standalone component template using karma for testing
 
 > This template is Vue 2.x **only**.
 
+![](https://lh3.googleusercontent.com/tYVDDLYMopULiC3h_Pwiw69RZ85gLSpQQYh5cpOgfvYyMqzZo9Z8cpHLiZ7Jt-Kpnyfa_SNpZSwtokQSTI71r9d9QqH4bymxreVOY0unvKEd0aqCY5YLCwsF_oSvC7sHPEHKsSwJLs4FbneoXd6eZQ4F_Kv7EC_sYTc1KeuoSZrbroh5RwlFw7t2iZDhQnp4rV-STc9plH6hLg1QyPm0ehV6C54szgSoi5PUWXTiIbG63DNXTn3zizkOLpk-BOE-E_uhRmLiNbaggVrfjw-zInqWgouaqV2fQfLkWPs7W6SJHn8IaS9jKVJBF5CN6rv9eQNs7sFr_u9ZwBvU7yVAJq2gLrAD033JdHjx-LZbQI_kCGvXV98yEP7C2OHsIx-IT8n90nbFnAXp7tlAc-mGQeUnEIdnfe4GdILEDP5tYPmu-nKeN7tL6_E-kpN8oIT6tdm2yCEivhQx6CcvDJlpAIG9eGWduwtf2c2Kfx6U0k4bWgCid7X_39KkgDmCbUMt2fdMMfcDVHrGOMWiOVzBbFuKxMbIxbd7J0ty_ZKKa8dFIfhLYdUtRK4bCjf7ZKIqNUy9wwKY=w1600-h794)
+
 ### Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
