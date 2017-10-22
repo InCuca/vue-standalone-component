@@ -13,7 +13,7 @@
     "serve": "vue-styleguidist server",
     "test": "poi test",
     "test:watch": "poi test --watch",
-    "test:cov": "poi test --coverage",
+    "test:cov": "poi test --coverage"
   },
   "keywords": [
     "vue",

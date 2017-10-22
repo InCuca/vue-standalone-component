@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Component from '@/src/{{ name }}/{{ name }}';
+import Component from '../../src/{{ name }}/{{ name }}';
 
 describe('{{ name }}.vue', () => {
   it('should render correct contents', () => {
