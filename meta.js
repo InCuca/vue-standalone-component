@@ -23,6 +23,7 @@ module.exports = {
   "complete": function(data, {logger}) {
     // Rename to be compatible with styleguide configuration
     const cmpDir = data.inPlace?'src/Component':path.resolve(data.destDirName, 'src/Component');
+    const testDir = data.inPlace?'test':path.resolve(data.destDirName, 'test');
     fs.renameSync(
       path.resolve(cmpDir, 'Component.vue'),
       path.resolve(cmpDir, data.name + '.vue')
@@ -34,6 +35,10 @@ module.exports = {
     fs.renameSync(
       cmpDir,
       path.resolve(cmpDir, '../', data.name)
+    );
+    fs.renameSync(
+      path.resolve(testDir, 'specs/Component.spec.js'),
+      path.resolve(testDir, 'specs/' + data.name + '.spec.js')
     );
 
     logger.log("To get started:");
