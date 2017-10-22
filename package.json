@@ -1,0 +1,23 @@
+{
+  "name": "vue-standalone-component",
+  "version": "1.0.0",
+  "description": "Vuejs standalone component template using karma for testing",
+  "main": "meta.js",
+  "scripts": {
+    "test": "test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InCuca/vue-standalone-component.git"
+  },
+  "keywords": [
+    "template",
+    "vuejs"
+  ],
+  "author": "Walker Leite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InCuca/vue-standalone-component/issues"
+  },
+  "homepage": "https://github.com/InCuca/vue-standalone-component#readme"
+}
