@@ -25,7 +25,7 @@ PS: to build to UMD run `npm run build:umd`
 
 ### What's Included
 
-- TODO: Karma for testing
+- Karma for testing
 - Demo and documentation page from vue-styleguidist
 
 ### Linting
