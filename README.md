@@ -61,7 +61,7 @@ Vue.component('my-cmp', myCmp);
 #### UMD
 
 ```bash
-$ npm run build
+$ npm run build:umd
 ```
 
 ```html

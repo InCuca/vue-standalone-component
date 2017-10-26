@@ -23,7 +23,7 @@ Vue.component('{{ name }}', {{ camelcase name }});
 ## UMD
 
 ```bash
-$ npm run build
+$ npm run build:umd
 ```
 
 ```html
