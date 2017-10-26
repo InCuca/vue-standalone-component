@@ -44,9 +44,31 @@ $ npm run test:watch
 $ npm run test:cov
 ```
 
-### Building to ./dist
+### Building
+
+#### ES6 Modules / CommonJS
 
 ```bash
 $ npm run build
-$ npm run build:doc
+```
+
+```js
+import myCmp from 'dist/my-cmp';
+
+Vue.component('my-cmp', myCmp);
+```
+
+#### UMD
+
+```bash
+$ npm run build
+```
+
+```html
+<script src="https://unpkg.com/vue" charset="utf-8"></script>
+<script src="./dist/my-cmp.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+  Vue.component('my-cmp', window.MyCmp);
+</script>
 ```

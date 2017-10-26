@@ -4,16 +4,38 @@
 
 # Usage
 
-```js
-import Component from '{{name}}'
+## ES6 Modules / CommonJS
 
-Vue.component('{{name}}', Component);
+```bash
+$ npm run build
 ```
 
-    <{{name}} text="Hello World!"></{{name}}>
+```js
+import {{ camelcase name }} from 'dist/{{ name }}';
 
-PS: You can also build to UMD with `npm run build:umd`, the component will be
-available in the window['{{name}}'] variable.
+Vue.component('{{ name }}', {{ camelcase name }});
+```
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+```
+
+## UMD
+
+```bash
+$ npm run build
+```
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+
+<script src="https://unpkg.com/vue" charset="utf-8"></script>
+<script src="./dist/{{ name }}.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+  Vue.component('{{ name }}', window.{{ camelcase name }});
+</script>
+```
 
 ## Installation
 

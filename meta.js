@@ -20,6 +20,12 @@ module.exports = {
       "label": "Author"
     }
   },
+  "helpers": {
+    camelcase: function(str) {
+      return str.replace(/([\-_\s]+[a-z])|(^[a-z])/g, $1 => $1.toUpperCase())
+              .replace(/[\-_\s]+/g, '')
+    }
+  },
   "complete": function(data, {logger}) {
     // Rename to be compatible with styleguide configuration
     const cmpDir = data.inPlace?'src/Component':path.resolve(data.destDirName, 'src/Component');

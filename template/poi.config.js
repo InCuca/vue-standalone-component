@@ -3,12 +3,6 @@ const webpack = require('webpack');
 const glob = require('glob').sync;
 const {name} = require('./package.json');
 
-// converts my-component to MyComponent
-function camelCase (s) {
-  return s.replace(/([\-_\s]+[a-z])|(^[a-z])/g, $1 => $1.toUpperCase())
-          .replace(/[\-_\s]+/g, '')
-}
-
 module.exports = {
   entry: glob('./src/**/*.vue'),
   filename: {
@@ -23,5 +17,5 @@ module.exports = {
       frameworks: ['mocha', 'chai', 'phantomjs-shim'],
     })
   ],
-  moduleName: camelCase({{ name }})
+  moduleName: {{ camelcase name }}
 };
