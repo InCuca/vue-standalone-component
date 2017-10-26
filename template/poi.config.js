@@ -17,5 +17,5 @@ module.exports = {
       frameworks: ['mocha', 'chai', 'phantomjs-shim'],
     })
   ],
-  moduleName: {{ camelcase name }}
+  moduleName: '{{ camelcase name }}'
 };
