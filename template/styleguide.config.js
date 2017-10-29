@@ -20,7 +20,7 @@ module.exports = {
   sections: [
     {
       /* The component itself */
-      name: 'test-cmp1',
+      name: '{{ name }} documentation',
       content: 'docs/Introduction.md',
       components: 'src/**/*.vue',
       // ignore: ['src/ignored-component/ignored-component.vue'],
