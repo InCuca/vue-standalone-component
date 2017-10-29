@@ -30,7 +30,8 @@ module.exports = {
   webpackConfig: {
     module: {
 			loaders,
-		}
+		},
+    devtool: 'inline-source-map'
   },
   serverPort: 6062
 };
