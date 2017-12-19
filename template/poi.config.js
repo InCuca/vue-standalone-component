@@ -7,6 +7,7 @@ module.exports = {
   entry: glob('./src/**/*.vue'),
   filename: {
     js: name + '.min.js',
+    css: name + '.min.css',
   },
   sourceMap: true,
   html: false,

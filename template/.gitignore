@@ -1,6 +1,8 @@
 .DS_Store
 node_modules/
 dist/
+cjs/
+umd/
 styleguide/
 npm-debug.log
 yarn-error.log

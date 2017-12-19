@@ -2,41 +2,6 @@
 
 > {{ description }}
 
-# Usage
-
-## ES6 Modules / CommonJS
-
-```bash
-$ npm run build
-```
-
-```js
-import {{ camelcase name }} from 'dist/{{ name }}';
-
-Vue.component('{{ name }}', {{ camelcase name }});
-```
-
-```html
-<{{name}} text="Hello World!"></{{name}}>
-```
-
-## UMD
-
-```bash
-$ npm run build:umd
-```
-
-```html
-<{{name}} text="Hello World!"></{{name}}>
-
-<script src="https://unpkg.com/vue" charset="utf-8"></script>
-<script src="./dist/{{ name }}.min.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-  Vue.component('{{ name }}', window.{{ camelcase name }});
-</script>
-```
-
 ## Installation
 
 ### Using yarn
@@ -50,6 +15,51 @@ $ npm run build:umd
 ## Demo and Docs
 
 `npm run serve`
+
+## Usage
+
+### With [vue-loader](https://github.com/vuejs/vue-loader) or [vueify](https://github.com/vuejs/vueify)
+
+```js
+import {{ camelcase name }} from '{{ name }}.vue';
+
+Vue.component('{{ name }}', {{ camelcase name }});
+```
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+```
+
+### ES6 Modules / CommonJS
+
+```js
+import {{ camelcase name }} from '{{ name }}/cjs/{{ name }}.min.js';
+import '{{ name }}/cjs/{{ name }}.min.css';
+
+Vue.component('{{ name }}', {{ camelcase name }});
+```
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+```
+
+### UMD
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+
+<script src="https://unpkg.com/vue" charset="utf-8"></script>
+<script src="./umd/{{ name }}.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./umd/{{ name }}.min.css">
+
+<script type="text/javascript">
+  Vue.component('{{ name }}', window.{{ camelcase name }});
+</script>
+```
+
+## Build
+
+Build configuration is located in the `poi.config.js` file, to build just run: `npm run build`, it will build to `cjs` and `umd` directories.
 
 ## Tests
 

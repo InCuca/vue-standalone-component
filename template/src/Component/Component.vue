@@ -20,3 +20,7 @@ export default {
   },
 }
 </script>
+
+<style lang="css" scoped>
+  /* place here your styles */
+</style>

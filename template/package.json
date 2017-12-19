@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "description": "{{ description }}",
   "author": "{{ author }}",
-  "main": "dist/{{name}}.min.js",
+  "main": "src/{{name}}/{{name}}.vue",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/**/*.vue",
-    "build": "poi build --format cjs",
-    "build:umd": "poi build --format umd",
+    "build": "poi build --format cjs --dist cjs; poi build --format umd --dist umd",
     "build:doc": "vue-styleguidist build",
     "serve": "vue-styleguidist server",
     "test": "poi test",
@@ -20,7 +19,8 @@
     "component"
   ],
   "files": [
-    "dist/"
+    "umd/",
+    "cjs/"
   ],
   "dependencies": {
     "vue": "^2.5.3"
