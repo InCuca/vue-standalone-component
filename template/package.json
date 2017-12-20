@@ -19,6 +19,7 @@
     "component"
   ],
   "files": [
+    "src/",
     "umd/",
     "cjs/"
   ],
