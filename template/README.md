@@ -18,23 +18,11 @@
 
 ## Usage
 
-### With [vue-loader](https://github.com/vuejs/vue-loader) or [vueify](https://github.com/vuejs/vueify)
-
-```js
-import {{ camelcase name }} from '{{ name }}.vue';
-
-Vue.component('{{ name }}', {{ camelcase name }});
-```
-
-```html
-<{{name}} text="Hello World!"></{{name}}>
-```
-
 ### ES6 Modules / CommonJS
 
 ```js
-import {{ camelcase name }} from '{{ name }}/cjs/{{ name }}.min.js';
-import '{{ name }}/cjs/{{ name }}.min.css';
+import {{ camelcase name }} from '{{ name }}';
+import '{{ name }}/dist/{{ name }}.min.css';
 
 Vue.component('{{ name }}', {{ camelcase name }});
 ```
@@ -49,8 +37,8 @@ Vue.component('{{ name }}', {{ camelcase name }});
 <{{name}} text="Hello World!"></{{name}}>
 
 <script src="https://unpkg.com/vue" charset="utf-8"></script>
-<script src="./umd/{{ name }}.min.js" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="./umd/{{ name }}.min.css">
+<script src="./dist/umd/{{ name }}.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./dist/umd/{{ name }}.min.css">
 
 <script type="text/javascript">
   Vue.component('{{ name }}', window.{{ camelcase name }});
