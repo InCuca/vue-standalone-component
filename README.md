@@ -57,7 +57,7 @@ $ npm run build
 ```js
 import myCmp from 'dist/my-cmp';
 
-Vue.component('my-cmp', myCmp);
+Vue.component('my-cmp', myCmp.default);
 ```
 
 #### UMD
