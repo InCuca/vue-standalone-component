@@ -29,6 +29,8 @@ PS: to build to UMD run `npm run build:umd`
 
 - Karma for testing
 - Demo and documentation page from [vue-styleguidist](https://github.com/vue-styleguidist/vue-styleguidist/)
+- [Release it!](https://github.com/webpro/release-it) support
+- [Babel](https://babeljs.io/) and [ESLint](https://eslint.org/)
 
 ### Linting
 
