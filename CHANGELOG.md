@@ -1,3 +1,13 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/InCuca/vue-standalone-component/compare/2.1.0...2.2.0) (2018-05-16)
+
+
+### Features
+
+* **styleguide:** add global file and enable vue devtools ([1dfe1b3](https://github.com/InCuca/vue-standalone-component/commit/1dfe1b3))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/InCuca/vue-standalone-component/compare/2.0.0...2.1.0) (2017-12-27)
 
