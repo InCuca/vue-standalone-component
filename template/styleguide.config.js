@@ -1,6 +1,7 @@
 const loaders = require('vue-webpack-loaders');
 const glob = require('glob').sync;
 const basename = require('path').basename;
+const join = require('path').join;
 
 function getDocSections() {
   b = p => basename(p, '.md');
@@ -33,5 +34,8 @@ module.exports = {
 		},
     devtool: 'inline-source-map'
   },
-  serverPort: 6062
+  serverPort: 6062,
+  require: [
+    join(__dirname, 'styleguide.global.js'),
+  ]
 };
