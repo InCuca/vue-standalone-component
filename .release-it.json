@@ -11,7 +11,7 @@
     "release": true,
     "releaseName": "Release v%s"
   },
-  "buildCommand": "npm run build && npx conventional-changelog -p angular -i CHANGELOG.md -s",
+  "buildCommand": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
   "increment": "conventional:angular",
   "beforeChangelogCommand": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
   "changelogCommand": "npx conventional-changelog -p angular -u | tail -n +3",
