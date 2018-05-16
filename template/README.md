@@ -41,7 +41,7 @@ Vue.component('{{ name }}', {{ camelcase name }});
 <link rel="stylesheet" type="text/css" href="./dist/umd/{{ name }}.min.css">
 
 <script type="text/javascript">
-  Vue.component('{{ name }}', window.{{ camelcase name }});
+  Vue.component('{{ name }}', window.{{ camelcase name }}.default);
 </script>
 ```
 

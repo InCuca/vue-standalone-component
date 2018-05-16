@@ -69,6 +69,6 @@ $ npm run build:umd
 <script src="./dist/my-cmp.min.js" charset="utf-8"></script>
 
 <script type="text/javascript">
-  Vue.component('my-cmp', window.MyCmp);
+  Vue.component('my-cmp', window.MyCmp.default);
 </script>
 ```
