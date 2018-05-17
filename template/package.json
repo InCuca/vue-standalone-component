@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/**/*.vue",
-    "build": "poi build --format cjs --dist dist; poi build --format umd --dist dist/umd",
+    "build": "npm run build:cjs && npm run build:umd",
+    "build:cjs": "poi build --format cjs --dist dist",
+    "build:umd": "poi build --format umd --dist dist/umd",
     "build:doc": "vue-styleguidist build",
     "serve": "vue-styleguidist server",
     "test": "poi test",
