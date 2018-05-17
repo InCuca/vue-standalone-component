@@ -24,7 +24,7 @@
 import {{ camelcase name }} from '{{ name }}';
 import '{{ name }}/dist/{{ name }}.min.css';
 
-Vue.component('{{ name }}', {{ camelcase name }});
+Vue.component('{{ name }}', {{ camelcase name }}.default);
 ```
 
 ```html
