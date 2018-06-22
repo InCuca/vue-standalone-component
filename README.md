@@ -70,7 +70,13 @@ $ npm run build:umd
 <script src="https://unpkg.com/vue" charset="utf-8"></script>
 <script src="./dist/my-cmp.min.js" charset="utf-8"></script>
 
+<div id="app"></div>
+
 <script type="text/javascript">
   Vue.component('my-cmp', window.MyCmp.default);
+  new Vue({
+    el: '#app',
+    template: '<my-cmp text="Hello World!"></my-cmp>',
+  });
 </script>
 ```
