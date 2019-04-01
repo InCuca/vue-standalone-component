@@ -3,6 +3,8 @@
 
 Vuejs standalone component template using karma for testing
 
+> **DEPRECATED: [USE VUE-CLI 3 + VUE-CLI STYLGUIDIST INSTEAD](https://github.com/vue-styleguidist/vue-styleguidist/tree/dev/packages/vue-cli-plugin-styleguidist)**
+
 > Build your standalone components using this tiny template.
 
 > This template is Vue 2.x **only**.
